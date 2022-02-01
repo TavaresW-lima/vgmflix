@@ -1,0 +1,131 @@
+@import './variables.css';
+
+.m-header {
+    height: auto;
+    width: 100%;
+    background: rgb(44,44,44);
+    background: var(--header-background-color);
+    display: flex;
+    position: fixed;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 50px;
+    z-index: 1000;
+}
+
+.h-menu {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    user-select: none;
+}
+
+.h-menu__logo {
+    height: 2rem;
+    font-weight: 100;
+}
+
+.h-menu__item {
+    margin-left: 20px;
+    transition: color .3s ease;
+}
+
+.h-menu__item:hover {
+    color: var(--text-color-dark);
+}
+
+.h-menu__item--active {
+    font-weight: 900;
+}
+
+.h-menu__item--active:hover {
+    color: var(--text-color);
+}
+
+.h-menu__item:first-child {
+    margin-left: 40px;
+}
+
+.h-user__actions-wrapper {
+    position:relative;
+    overflow: visible;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 5px;
+    border-radius: 25px;
+    transition: background-color .3s ease;
+}
+
+.h-user__actions-wrapper:hover {
+    background-color: var(--bg-color-light-transparent);
+}
+
+.h-user__actions-wrapper:hover 
+.h-user__actions-menu-container {
+    opacity: 1;
+    visibility: visible;
+}
+
+.h-user__actions-wrapper:hover .h-user__img {
+    border: 2px solid var(--main-color);
+}
+
+.h-user__img {
+    height: 2.5rem;
+    border-radius: 50%;
+    border: 2px solid white;
+    margin-right: 5px;
+    transition: border-color .3s ease;
+    cursor: pointer;
+}
+
+.h-user__actions-wrapper i {
+    font-size: .8rem;
+    margin-right: 5px;
+    cursor: pointer;
+}
+
+.h-user__actions-menu-container {
+    position: absolute;
+    right:0;
+    margin-top: 190px;
+    width:auto;
+    background: var(--bg-color-light-transparent);
+    border-radius: 5px;
+    white-space: nowrap;
+    opacity: 0;
+    visibility: hidden;
+    transition: 
+        opacity .3s ease
+        visibility .2s ease;
+}
+
+.h-user__my-profile { 
+    padding: 10px 25px 10px 10px;
+}
+
+.h-user__my-profile a {
+    display: block;
+    margin-top:2px;
+    font-weight: 600;
+}
+
+.h-user__actions-menu-divider {
+    width: 100%;
+    height: 1px;
+    background: var(--text-color-darker);
+}
+
+.h-user__actions-menu {
+    padding: 10px 25px 10px 10px;
+    list-style-type: none;
+}
+
+.h-user__actions-menu > li {
+    margin-bottom: 5px;
+}
+
+.h-user__actions-menu > li:last-child {
+    margin-bottom: 0px;
+}

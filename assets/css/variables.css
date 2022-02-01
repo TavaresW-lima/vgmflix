@@ -1,0 +1,30 @@
+:root {
+    --main-color: #bd20ff;
+    
+    --header-background-color: linear-gradient(
+        180deg, 
+        rgba(44, 44, 44, 0.884) 15%, 
+        rgba(44,44,44,0) 100%
+    );
+
+    --bg-color: #2c2c2c;
+    --bg-color-dark: #1c1c1c;
+    --bg-color-light: #3c3c3c;
+    --bg-color-light-transparent: rgba(40, 40, 40, 0.6);
+    --bg-color-lighter-transparent: rgba(60,60,60,0.6);
+    --bg-color-alternate: white;
+    --bg-color-alternate-dark: var(--text-color-dark);
+
+    --text-color: white;
+    --text-color-dark: #d3d3d3;
+    --text-color-darker: #869791;
+    --text-color-alternate: var(--bg-color-dark);
+
+    --btn-text-color: var(--text-color-alternate);
+    --btn-text-color-alternate: var(--text-color);
+    --btn-background: var(--bg-color-alternate);
+    --btn-background-dark: var(--bg-color-alternate-dark);
+    --btn-background-secondary: rgba(60, 60, 60, 0.6);
+    --btn-background-secondary-dark: rgba(40, 40, 40, 0.6);
+
+}

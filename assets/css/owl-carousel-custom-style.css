@@ -1,0 +1,58 @@
+@import url('./variables.css');
+
+.owl-theme-custom .owl-stage {
+    padding-left: 0px !important;
+    position: relative;
+}
+
+.owl-theme-custom .owl-nav {
+    position: absolute;
+    top: 0;
+    right:0;
+    display: flex;
+    margin-top: -40px !important;
+    margin-right: 20px !important;
+}
+
+.owl-theme-custom .owl-next, .owl-theme-custom  .owl-prev {
+    width:30px;
+    height: 30px;
+    font-size:1.5rem !important;
+}
+
+.owl-theme-custom .owl-next {
+    margin-left: 0 !important;
+}
+
+.owl-theme-custom  .owl-prev {
+    margin-right: 0 !important;
+}
+
+.owl-theme-custom .owl-next span, .owl-theme-custom .owl-prev span {
+    color: var(--text-color);
+    display: block;
+    margin-top: -5px;
+}
+
+.owl-theme-custom .owl-dots {
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin-top: -28px !important;
+    margin-right: 100px !important;
+}
+
+.owl-theme-custom .owl-dots .owl-dot span {
+    height: 4px;
+    margin: 5px 3px;
+    background: var(--text-color-darker);
+}
+
+.owl-theme-custom .owl-dots .owl-dot:hover span {
+    background: var(--text-color-dark);
+}
+
+.owl-theme-custom .owl-dots .owl-dot.active span {
+    background:var(--text-color);
+}
+
