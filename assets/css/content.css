@@ -34,7 +34,7 @@
 }
 
 .h-hero {
-    max-width:40%;
+    max-width:100%;
 }
 
 .h-hero__title {
@@ -110,4 +110,22 @@
 
 .mc-list__item:hover .mc-list__image {
     transform: scale(1.03);
+}
+
+@media screen and (min-width: 700px) {
+    .h-hero {
+        max-width: 70%;
+    }
+}
+
+@media screen and (min-width: 900px) {
+    .h-hero {
+        max-width: 60%;
+    }
+}
+
+@media screen and (min-width: 1100px) {
+    .h-hero {
+        max-width: 40%;
+    }
 }

@@ -31,3 +31,9 @@
 .ft__icon-link:hover {
     color: var(--main-color);
 }
+
+@media screen and (max-width: 900px) {
+    .ft__content-wrapper {
+        padding: 40px 80px;
+    }
+}
